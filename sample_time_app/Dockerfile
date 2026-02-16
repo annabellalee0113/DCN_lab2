@@ -1,8 +1,4 @@
-FROM python:3.5
-
-RUN apt-get update \
-  && apt-get clean \
-  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+FROM python:3.11-slim
 
 
 RUN groupadd -g 799 nyu && \
